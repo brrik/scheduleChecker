@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Test Site</title>
+</head>
+<body>
+    <h1>予約登録プロトタイプ</h1>
+    <div class="inputForms">
+        <p>予約開始時刻</p>
+        <input type="time" id="start_time" placeholder="00:00">
+    </div>
+    <div class="inputForms">
+        <p>予約終了時刻</p>
+        <input type="time" id="end_time" placeholder="00:00">
+    </div>
+    <div class="inputForms">
+        <p>お客様名</p>
+        <input type="text" id="cust_name" placeholder="お客様名">
+    </div>
+    <div class="inputForms">
+        <p>予約人数(数字のみ記入)</p>
+        <input type="number" id="cust_num" placeholder="0">
+    </div>
+    <div class="inputForms">
+        <p>予約卓(卓番号のみ記入)</p>
+        <input type="number" id="table_num" placeholder="1">
+    </div>
+    <button id="registerBtn" onclick="dataCheck()">登録</button>
+    <button onclick="getData()">取得テスト</button>
+<script src="script.js"></script>
+</body>
+</html>

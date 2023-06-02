@@ -1,0 +1,12 @@
+.inputForms{
+    display: flex;
+}
+
+.inputForms input{
+    margin-left: 30px;
+}
+
+#registerBtn{
+    height: 50px;
+    width: 60%;
+}
