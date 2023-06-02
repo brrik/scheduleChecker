@@ -36,7 +36,9 @@ function getData(){
 }
 
 function parseAll(mainList){
-    mainList.forEach(elem => {
-        console.log(elem);        
-    });
+    let keyNum = Object.keys(mainList).length;
+    for(i==0;i<keyNum;i++){
+        console.log(mainList[i]);
+    }
+
 }
