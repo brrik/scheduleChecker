@@ -8,6 +8,9 @@ http.onreadystatechange = function() {
         res = http.responseText;
         x = JSON.parse(res);
         console.log(x);
+        if(length(x)>1){
+            parseAll(x);
+        }
     }
 }
 
@@ -30,4 +33,10 @@ function getData(){
     let url = mainURL + "getdata";
     http.open("GET",url);
     http.send();
+}
+
+function parseAll(mainList){
+    mainList.forEach(elem => {
+        console.log(elem);        
+    });
 }
